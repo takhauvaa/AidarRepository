@@ -27,7 +27,7 @@ define(['angular', 'ngRoute'],function(angular) {
 		}).otherwise({
 			redirectTo : '/FinanceTime'
 		});
-		
+		console.print('this is the test');
 	} ]);
 
 	// app.run(function ($window, auth, user) {
