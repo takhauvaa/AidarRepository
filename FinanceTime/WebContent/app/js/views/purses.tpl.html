@@ -1,0 +1,33 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<span class="navbar-brand">Кошелек</span>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	
+	<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+	<div class="container">
+		<span>Выберите кошелек</span>
+	</div>
+</div>
+	<div class="container">
+<div   class="col-md-4" ng-repeat="item in purses">
+	<div class="well btn btn-default placeholder"
+		ng-click="goFlowing(item)">
+		<h2>{{item.name}}</h2>
+	</div>
+</div>
+</div>
